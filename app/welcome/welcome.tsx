@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import logoDark from "./logo-dark.svg";
 import logoLight from "./logo-light.svg";
 
@@ -38,6 +39,12 @@ export function Welcome() {
                   </a>
                 </li>
               ))}
+              <li>
+                <Link 
+                  className="group flex items-center gap-3 self-stretch p-3 leading-normal text-blue-700 hover:underline dark:text-blue-500"
+                  to="/about">About
+                </Link>
+              </li>
             </ul>
           </nav>
         </div>
